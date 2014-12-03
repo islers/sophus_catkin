@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package>
+  <name>sophus_catkin</name>
+  <version>0.0.0</version>
+  <description>The svo_gtsam package</description>
+  <maintainer email="cforster@todo.todo">cforster</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>eigen_catkin</build_depend>
+  <run_depend>eigen_catkin</run_depend>
+</package>
