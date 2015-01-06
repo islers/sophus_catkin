@@ -6,7 +6,7 @@ IF (CMAKE_COMPILER_IS_GNUCXX )
    SET(CMAKE_CXX_FLAGS_DEBUG  "-O0 -g")
    SET(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG ")
 
-  ADD_DEFINITIONS("-Wall -Werror -Wno-unused-variable
+  ADD_DEFINITIONS("-Wall -Werror -Wno-unused-local-typedefs -Wno-unused-variable
                    -Wno-unused-but-set-variable -Wno-unknown-pragmas ")
 ENDIF()
 
@@ -20,12 +20,12 @@ catkin_package(
 )
 
 SET (SOURCE_DIR "sophus")
-SET (CLASSES  so2
-              se2
-              se3
-              so3
-              scso3
-              sim3
+SET (CLASSES  sophus/so2
+              sophus/se2
+              sophus/se3
+              sophus/so3
+              sophus/scso3
+              sophus/sim3
 )
 
 SET (SOURCES)
